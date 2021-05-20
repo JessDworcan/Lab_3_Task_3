@@ -8,13 +8,19 @@
 
 using namespace std;
 
-//function increments an int vector at the index returned by the function index_of_char
+// Increments an int vector at a specific index
+// index - the specific index
+// counts - the int vector
+// returns the vector counts, incremented at a specific index
 vector <int> inc_index(int index, vector <int> counts)
 {
     counts[index]++;
     return counts;
 }
-//function returns the index at which the char in char_list is equal to the parameter letter
+// Finds the index of a char in a vector of chars
+// letter - the letter to search for
+// char_list - the list of chars to search through
+// returns int of the index of the found letter or -1 if the letter is not found.
 int index_of_char(char letter, vector <char> char_list)
 {
     for ( int i = 0; i < char_list.size(); i++)
@@ -49,7 +55,7 @@ int main()
     {
         index = index_of_char(in_char_list[inputIndex], distinct_char_list);
         if (index == -1) {
-            //if the index of a char was not found and therefore index -1 returned,
+            // if the index of a char was not found and therefore index -1 returned,
             // then the char in vector in_char_list at the inputIndex is pushed onto the vector distinct_char_list
             distinct_char_list.push_back(in_char_list[inputIndex]);
             counts.push_back(1); // ensures counts is as long as distinct_char_list and starts each value at 1
