@@ -8,16 +8,17 @@
 
 using namespace std;
 
-//function increments an int vector at the index returned by the function index_of_char storing
+//function increments an int vector at the index returned by the function index_of_char
 vector <int> inc_index(int index, vector <int> counts)
 {
     counts[index]++;
     return counts;
 }
-// function returns the index at which the char in char_list is equal to the parameter letter
+//function returns the index at which the char in char_list is equal to the parameter letter
 int index_of_char(char letter, vector <char> char_list)
 {
-    for ( int i = 0; i < char_list.size(); i++){
+    for ( int i = 0; i < char_list.size(); i++)
+    {
         if( letter == char_list[i])
         {
             return i;
@@ -26,8 +27,8 @@ int index_of_char(char letter, vector <char> char_list)
     return -1;
 }
 
-int main() {
-
+int main()
+{
     ifstream in_file("input.txt");
     ofstream out_file("output.txt");
 
@@ -43,27 +44,28 @@ int main() {
     }
 
     int index;
-    //for loop to iterate through the
-    for (int inputIndex = 0; inputIndex < in_char_list.size(); inputIndex++) {
+    //for loop to iterate through the vector in_char_list
+    for (int inputIndex = 0; inputIndex < in_char_list.size(); inputIndex++)
+    {
         index = index_of_char(in_char_list[inputIndex], distinct_char_list);
         if (index == -1) {
-            //if the index of a char was not found then that char is pushed onto distinct_char vector
+            //if the index of a char was not found and therefore index -1 returned,
+            // then the char in vector in_char_list at the inputIndex is pushed onto the vector distinct_char_list
             distinct_char_list.push_back(in_char_list[inputIndex]);
             counts.push_back(1); // ensures counts is as long as distinct_char_list and starts each value at 1
         }
         else
         {
-            //the index was found and therefore the count as that index must be incremented
+            //the index was found and therefore the count at that index must be incremented
             counts = inc_index(index, counts);
         }
     }
 
-    //output for loop
+    //output to file for loop
     for(int i = 0; i < distinct_char_list.size(); i++)
     {
         out_file << distinct_char_list[i] << " " << counts[i] << endl;
     }
-
 
     return 0;
 }
