@@ -50,22 +50,21 @@ int main()
     ifstream in_file("input.txt");
     ofstream out_file("output.txt");
 
-    vector <char> chars_in_string;
-    vector <string> sentences;
-    string sentence;
+    vector <string> lines;
+    string line;
 
     if (in_file.is_open())
     {
-        while(getline(in_file, sentence))
+        while(getline(in_file, line))
         {
-            sentences.push_back(sentence);
+            lines.push_back(line);
         }
     }
 
     //output to file
-    for (int i = 0; i < sentences.size(); i++)
+    for (int i = 0; i < lines.size(); i++)
     {
-        out_file << reverse_words_in_string(sentences[i]) << endl;
+        out_file << reverse_words_in_string(lines[i]) << endl;
     }
 
     in_file.close();
