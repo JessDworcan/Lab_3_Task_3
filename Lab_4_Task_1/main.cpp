@@ -1,3 +1,6 @@
+// Student number: 1924564
+// Date: 28.05.2021
+// Name: Jess Dworcan
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -19,7 +22,7 @@ string reverse_words_in_string(string in_string)
         {
             letters_in_word.push_back(in_string[i]);
         }
-        //when the loop reaches a character that is not a letter
+            //when the loop reaches a character that is not a letter
         else
         {
             while (!letters_in_word.empty())
