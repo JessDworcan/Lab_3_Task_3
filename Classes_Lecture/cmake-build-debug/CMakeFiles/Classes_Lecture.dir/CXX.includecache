@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dworcanj/Documents/Wits/Wits Year 2/Software Development/LABS/Classes_Lecture/Rectangle.cpp
+Rectangle.h
+/home/dworcanj/Documents/Wits/Wits Year 2/Software Development/LABS/Classes_Lecture/Rectangle.h
+
+/home/dworcanj/Documents/Wits/Wits Year 2/Software Development/LABS/Classes_Lecture/Rectangle.h
+

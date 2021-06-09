@@ -1,0 +1,18 @@
+/home/dworcanj/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7223.86/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/bin/g++-9 -G "CodeBlocks - Unix Makefiles" "/home/dworcanj/Documents/Wits/Wits Year 2/Software Development/LABS/untitled"
+-- The C compiler identification is GNU 9.2.1
+-- The CXX compiler identification is GNU 9.2.1
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /bin/g++-9
+-- Check for working CXX compiler: /bin/g++-9 -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dworcanj/Documents/Wits/Wits Year 2/Software Development/LABS/untitled/cmake-build-debug

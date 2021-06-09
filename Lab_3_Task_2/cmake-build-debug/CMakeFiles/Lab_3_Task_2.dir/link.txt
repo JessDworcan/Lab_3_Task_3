@@ -1,0 +1,1 @@
+/bin/g++-9 -g CMakeFiles/Lab_3_Task_2.dir/main.cpp.o -o Lab_3_Task_2 

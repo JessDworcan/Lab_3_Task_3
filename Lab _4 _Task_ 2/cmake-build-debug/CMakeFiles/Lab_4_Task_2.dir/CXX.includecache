@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dworcanj/Documents/Wits/Wits Year 2/Software Development/LABS/Lab _4 _Task_ 2/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+

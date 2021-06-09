@@ -1,0 +1,1 @@
+/bin/g++-9 -g CMakeFiles/Classes_Lecture.dir/main.cpp.o CMakeFiles/Classes_Lecture.dir/Rectangle.cpp.o -o Classes_Lecture 
